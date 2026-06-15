@@ -1,0 +1,722 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fah Bakery & Café | ร้านเบเกอรี่พรีเมียมสไตล์ฝรั่งเศส อบสดใหม่ทุกวัน</title>
+    <meta name="description"
+        content="สัมผัสรสชาติความอร่อยระดับพรีเมียมจากเบเกอรี่อบสดใหม่สไตล์ปารีเซียง ครัวซองต์เนยแท้ เค้กวันเกิดออกแบบเองได้ และขนมปังซาวโดวจ์ธรรมชาติที่ Fah Bakery & Café">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- --- HEADER / NAV BAR --- -->
+    <header>
+        <div class="nav-container">
+            <a href="#home" class="logo">
+                <svg class="logo-icon" viewBox="0 0 24 24">
+                    <path
+                        d="M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M12,4A2,2 0 0,1 14,6A2,2 0 0,1 12,8A2,2 0 0,1 10,6A2,2 0 0,1 12,4M12,18A2,2 0 0,1 10,16A2,2 0 0,1 12,14A2,2 0 0,1 14,16A2,2 0 0,1 12,18M16,10A2,2 0 0,1 18,12A2,2 0 0,1 16,14A2,2 0 0,1 14,12A2,2 0 0,1 16,10M8,10A2,2 0 0,1 10,12A2,2 0 0,1 8,14A2,2 0 0,1 6,12A2,2 0 0,1 8,10Z" />
+                </svg>
+                Fah <span>Bakery & Café</span>
+            </a>
+
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home" class="active">หน้าแรก</a></li>
+                <li><a href="#story">เรื่องราวของเรา</a></li>
+                <li><a href="#menu">เมนูแนะนํา</a></li>
+                <li><a href="#customizer">ออกแบบเค้ก</a></li>
+                <li><a href="#contact">ติดต่อเรา</a></li>
+            </ul>
+
+            <div class="nav-actions">
+                <button class="cart-trigger" id="cartTrigger" aria-label="เปิดตะกร้าสินค้า" style="margin-right: 10px;">
+                    <svg viewBox="0 0 24 24" style="width:20px; height:20px; fill:currentColor;">
+                        <path
+                            d="M17,18A2,2 0 0,1 19,20A2,2 0 0,1 17,22C15.89,22 15,21.1 15,20C15,18.89 15.89,18 17,18M1,2H4.27L5.21,4H20A1,1 0 0,1 21,5C21,5.17 20.95,5.34 20.88,5.5L17.3,11.97C16.96,12.58 16.3,13 15.55,13H8.1L7.2,14.63L7.17,14.75A0.25,0.25 0 0,0 7.42,15H19V17H7A2,2 0 0,1 5,15C5,14.65 5.09,14.32 5.24,14.04L6.6,11.59L3,4H1V2M7,18A2,2 0 0,1 9,20A2,2 0 0,1 7,22C5.89,22 5,21.1 5,20C5,18.89 5.89,18 7,18Z" />
+                    </svg>
+                    <span class="cart-badge" id="cartBadge">0</span>
+                </button>
+                <a href="#menu" class="btn btn-primary" style="padding: 10px 20px; font-size: 0.9rem;">สั่งซื้อเลย</a>
+                <button class="menu-toggle" id="menuToggle" aria-label="Toggle Menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- --- HERO SECTION --- -->
+    <section id="home" class="hero">
+        <div class="hero-bg"></div>
+        <div class="floating-element wheat-float-1">
+            <svg viewBox="0 0 100 100" fill="none" stroke="rgba(197, 168, 128, 0.4)" stroke-width="2">
+                <path
+                    d="M50 90 C50 60 70 30 75 10 M50 75 C45 65 30 60 20 62 M50 60 C55 50 70 45 80 47 M50 45 C45 35 30 30 20 32 M50 30 C55 20 70 15 80 17" />
+            </svg>
+        </div>
+
+        <div class="container">
+            <div class="hero-content">
+                <span class="hero-tagline">Artisan & Passion Since 1998</span>
+                <h1 class="hero-title">อบอวลด้วยความรัก<br>อบสดใหม่<span>ในทุกวัน</span></h1>
+                <p class="hero-desc">พบกับเบเกอรี่ฝรั่งเศสพรีเมียมสไตล์ดั้งเดิม
+                    บ่มอบอย่างพิถีพิถันจากแป้งออร์แกนิกและเนยแท้นำเข้าจากแคว้นนอร์มังดี 100%
+                    เพื่อรสชาติและสัมผัสที่ดีที่สุด</p>
+                <div class="hero-ctas">
+                    <a href="#menu" class="btn btn-accent">ดูเมนูเบเกอรี่</a>
+                    <a href="#customizer" class="btn btn-secondary"
+                        style="border-color: #FFF; color: #FFF;">ออกแบบเค้กสั่งทำ</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- --- VALUES / FEATURES SECTION --- -->
+    <section class="section">
+        <div class="container">
+            <div class="values-grid reveal">
+                <!-- Card 1 -->
+                <div class="value-card">
+                    <div class="value-icon-wrapper">
+                        <svg class="value-icon" viewBox="0 0 24 24">
+                            <path
+                                d="M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M12,4A2,2 0 0,1 14,6A2,2 0 0,1 12,8A2,2 0 0,1 10,6A2,2 0 0,1 12,4M15,10.5A1.5,1.5 0 0,1 16.5,12A1.5,1.5 0 0,1 15,13.5A1.5,1.5 0 0,1 13.5,12A1.5,1.5 0 0,1 15,10.5M9,10.5A1.5,1.5 0 0,1 10.5,12A1.5,1.5 0 0,1 9,13.5A1.5,1.5 0 0,1 7.5,12A1.5,1.5 0 0,1 9,10.5M12,15A2,2 0 0,1 14,17A2,2 0 0,1 12,19A2,2 0 0,1 10,17A2,2 0 0,1 12,15Z" />
+                        </svg>
+                    </div>
+                    <h3>วัตถุดิบนำเข้าพรีเมียม</h3>
+                    <p>เราคัดสรรเนยแท้นำเข้า แป้งสาลีไม่ขัดสีระดับพรีเมียม
+                        และช็อกโกแลตจากแหล่งเพาะปลูกยั่งยืนเพื่อให้ได้รสชาติเข้มข้นดั้งเดิม</p>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="value-card">
+                    <div class="value-icon-wrapper">
+                        <svg class="value-icon" viewBox="0 0 24 24">
+                            <path
+                                d="M2,16H22V18H2V16M21.5,6C21.78,6 22,6.22 22,6.5V11C22,13.76 19.76,16 17,16H7C4.24,16 2,13.76 2,11V6.5C2,6.22 2.22,6 2.5,6H3C3.5,6 4,6.5 4,7V9H20V7C20,6.5 20.5,6 21,6H21.5M12,2A3,3 0 0,1 15,5V7H9V5A3,3 0 0,1 12,2Z" />
+                        </svg>
+                    </div>
+                    <h3>อบสดใหม่วันต่อวัน</h3>
+                    <p>เบเกอรี่ทุกชิ้นถูกขึ้นรูปและอบอย่างประณีตในเช้าตรู่ของทุกวัน เพื่อส่งตรงความสด กรอบ นุ่ม
+                        และหอมกรุ่นจากเตาถึงมือคุณ</p>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="value-card">
+                    <div class="value-icon-wrapper">
+                        <svg class="value-icon" viewBox="0 0 24 24">
+                            <path
+                                d="M12 3C6.5 3 2 6.5 2 11C2 13.1 3.1 15 5 16.3C5 17.5 4.3 19.4 4.1 20C4.9 20 6.7 19.1 7.8 18.3C9.1 18.7 10.5 19 12 19C17.5 19 22 15.5 22 11S17.5 3 12 3M12 14C10.9 14 10 13.1 10 12C10 10.9 10.9 10 12 10C13.1 10 14 10.9 14 12C14 13.1 13.1 14 12 14M16 10C14.9 10 14 9.1 14 8C14 6.9 14.9 6 16 6C17.1 6 18 6.9 18 8C18 9.1 17.1 10 16 10M8 10C6.9 10 6 9.1 6 8C6 6.9 6.9 6 8 6C9.1 6 10 6.9 10 8C10 9.1 9.1 10 8 10Z" />
+                        </svg>
+                    </div>
+                    <h3>ยีสต์ธรรมชาติ 24 ชม.</h3>
+                    <p>ขนมปังซาวโดวจ์สูตรพิเศษของเราบ่มหมักนานกว่า 24 ชั่วโมง ช่วยให้แป้งย่อยง่าย
+                        มีจุลินทรีย์ดีและรสเปรี้ยวกลมกล่อมอันเป็นเอกลักษณ์</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- --- STORY / ABOUT SECTION --- -->
+    <section id="story" class="section story">
+        <div class="container">
+            <div class="story-grid">
+                <div class="story-content reveal">
+                    <span class="section-tag">เรื่องราวของเรา</span>
+                    <h2 class="section-title">จากเตาอบอุ่นๆ สู่ความอบอุ่น<span>ในหัวใจคุณ</span></h2>
+                    <p class="story-text">Fah Bakery & Café ถือกำเนิดขึ้นจากความรักในวิถีการอบขนมปังฝรั่งเศสแบบดั้งเดิม
+                        เราเชื่อว่าเบเกอรี่ที่ดีไม่ได้เกิดขึ้นจากเครื่องจักร แต่เริ่มจากความอดทน ความหลงใหล
+                        และทักษะการสัมผัสเนื้อแป้งที่เชี่ยวชาญของช่างอบ</p>
+                    <p class="story-text">เราตั้งใจรักษากระบวนการทำมือ (Handcrafted) ในทุกๆ ขั้นตอน ตั้งแต่การนวดแป้ง
+                        คลึงเนยอย่างช้าๆ ไปจนถึงการคุมความร้อนในเตาฟืน เพื่อนำเสนอขนมปังที่สัมผัสกรอบกลมกล่อม
+                        มีเลเยอร์พับทับทวีคูณสวยงามชวนลิ้มลอง</p>
+
+                    <div class="story-highlights">
+                        <div class="story-highlight-item">
+                            <span></span>
+                            <p>เนยฝรั่งเศสแท้ AOC</p>
+                        </div>
+                        <div class="story-highlight-item">
+                            <span></span>
+                            <p>ไม่ใส่สารกันบูด 100%</p>
+                        </div>
+                        <div class="story-highlight-item">
+                            <span></span>
+                            <p>แป้งออร์แกนิกไม่ฟอกสี</p>
+                        </div>
+                        <div class="story-highlight-item">
+                            <span></span>
+                            <p>หัวเชื้อยีสต์ธรรมชาติป่า</p>
+                        </div>
+                    </div>
+
+                    <a href="#contact" class="btn btn-primary">แวะมาหาเราวันนี้</a>
+                </div>
+
+                <div class="story-image-wrapper reveal" style="transition-delay: 0.2s;">
+                    <div class="story-image-bg"></div>
+                    <img src="assets/lamut.jpg" alt="น้องละมุดแมวส้มพรีเมียม" class="story-image-main">
+                    <div class="story-badge">
+                        <span>28+</span>
+                        <span>ปีแห่งสูตรอร่อย</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- --- MENU SECTION --- -->
+    <section id="menu" class="section">
+        <div class="container">
+            <div class="text-center">
+                <span class="section-tag">เมนูแนะนำของเรา</span>
+                <h2 class="section-title">รังสรรค์ด้วยความประณีต<span>อบสดจากเตา</span></h2>
+                <p class="section-subtitle">ลิ้มรสความอร่อยกับเบเกอรี่และของหวานยอดนิยมที่ช่างขนมอบแนะนํา</p>
+            </div>
+
+            <!-- Menu Filters -->
+            <div class="menu-filters">
+                <button class="filter-btn active" data-filter="all">ทั้งหมด</button>
+                <button class="filter-btn" data-filter="pastry">เพสทรี & ครัวซองต์</button>
+                <button class="filter-btn" data-filter="bread">ขนมปังสุขภาพ</button>
+                <button class="filter-btn" data-filter="cake">เค้กพรีเมียม</button>
+            </div>
+
+            <!-- Menu Grid -->
+            <div class="menu-grid reveal">
+                <!-- Item 1 -->
+                <div class="menu-card" data-category="pastry">
+                    <div class="menu-card-img-wrapper">
+                        <img src="assets/croissant.png" alt="ครัวซองต์เนยสดฝรั่งเศส">
+                        <span class="menu-card-badge">ขายดีที่สุด</span>
+                    </div>
+                    <div class="menu-card-content">
+                        <div class="menu-card-title-price">
+                            <h3>ครัวซองต์เนยฝรั่งเศส</h3>
+                            <span class="menu-card-price">฿120</span>
+                        </div>
+                        <p class="menu-card-desc">ครัวซองต์อบร้อน แป้งกรอบฟูเป็นเลเยอร์บางเบา
+                            ด้านในเหนียวนุ่มชุ่มฉ่ำด้วยเนยแท้จากนอร์มังดี</p>
+                        <div class="menu-card-action">
+                            <div class="menu-rating">
+                                <svg viewBox="0 0 24 24">
+                                    <path
+                                        d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z" />
+                                </svg>
+                                <span>4.9 (120+)</span>
+                            </div>
+                            <div class="btn-add-cart" aria-label="เพิ่มครัวซองต์ลงในตะกร้า">
+                                <svg viewBox="0 0 24 24">
+                                    <path d="M19,13H13V19H11V13H5V11H11V5H13V11H19V13Z" />
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 2 -->
+                <div class="menu-card" data-category="pastry">
+                    <div class="menu-card-img-wrapper">
+                        <img src="assets/chocolate.png" alt="ช็อกโกแลตแปงโอช็อกโกแลต">
+                    </div>
+                    <div class="menu-card-content">
+                        <div class="menu-card-title-price">
+                            <h3>แปงโอช็อกโกแลต</h3>
+                            <span class="menu-card-price">฿135</span>
+                        </div>
+                        <p class="menu-card-desc">ขนมปังเพสทรีซ้อนชั้นสวยงามสอดไส้ดาร์กช็อกโกแลตเข้มข้นนำเข้า
+                            รสหวานขมพอดีอย่างหรูหรา</p>
+                        <div class="menu-card-action">
+                            <div class="menu-rating">
+                                <svg viewBox="0 0 24 24">
+                                    <path
+                                        d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z" />
+                                </svg>
+                                <span>4.8 (85)</span>
+                            </div>
+                            <div class="btn-add-cart" aria-label="เพิ่มแปงโอช็อกโกแลตลงในตะกร้า">
+                                <svg viewBox="0 0 24 24">
+                                    <path d="M19,13H13V19H11V13H5V11H11V5H13V11H19V13Z" />
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 3 -->
+                <div class="menu-card" data-category="cake">
+                    <div class="menu-card-img-wrapper">
+                        <img src="assets/strawberry.png" alt="สตรอว์เบอร์รี่ชอร์ตเค้ก">
+                        <span class="menu-card-badge">แนะนำ</span>
+                    </div>
+                    <div class="menu-card-content">
+                        <div class="menu-card-title-price">
+                            <h3>สตรอว์เบอร์รี่ชอร์ตเค้ก</h3>
+                            <span class="menu-card-price">฿160</span>
+                        </div>
+                        <p class="menu-card-desc">สปันจ์เค้กญี่ปุ่นเนื้อนุ่มเบาราวก้อนเมฆ
+                            ครีมสดวานิลลาแท้สลับชั้นกับสตรอว์เบอร์รี่สดฉ่ำเปรี้ยวหวาน</p>
+                        <div class="menu-card-action">
+                            <div class="menu-rating">
+                                <svg viewBox="0 0 24 24">
+                                    <path
+                                        d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z" />
+                                </svg>
+                                <span>4.9 (94)</span>
+                            </div>
+                            <div class="btn-add-cart" aria-label="เพิ่มสตรอว์เบอร์รี่ชอร์ตเค้กลงในตะกร้า">
+                                <svg viewBox="0 0 24 24">
+                                    <path d="M19,13H13V19H11V13H5V11H11V5H13V11H19V13Z" />
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 4 -->
+                <div class="menu-card" data-category="bread">
+                    <div class="menu-card-img-wrapper">
+                        <img src="assets/sourdough.png" alt="ขนมปังซาวโดวจ์ยีสต์ธรรมชาติ">
+                    </div>
+                    <div class="menu-card-content">
+                        <div class="menu-card-title-price">
+                            <h3>ขนมปังซาวโดวจ์โฮมเมด</h3>
+                            <span class="menu-card-price">฿190</span>
+                        </div>
+                        <p class="menu-card-desc">ซาวโดวจ์กลมหมักแป้งช้าๆ ผิวนอกหนากรอบสีน้ำตาลทอง
+                            เนื้อในยืดหยุ่นนุ่มหนึบ เต็มเปี่ยมด้วยรสธรรมชาติ</p>
+                        <div class="menu-card-action">
+                            <div class="menu-rating">
+                                <svg viewBox="0 0 24 24">
+                                    <path
+                                        d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z" />
+                                </svg>
+                                <span>5.0 (64)</span>
+                            </div>
+                            <div class="btn-add-cart" aria-label="เพิ่มซาวโดวจ์ลงในตะกร้า">
+                                <svg viewBox="0 0 24 24">
+                                    <path d="M19,13H13V19H11V13H5V11H11V5H13V11H19V13Z" />
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- --- DREAM CAKE CUSTOMIZER SECTION --- -->
+    <section id="customizer" class="section customizer">
+        <div class="container">
+            <div class="text-center">
+                <span class="section-tag" style="color: var(--accent-light);">ออกแบบขนมของคุณ</span>
+                <h2 class="section-title">เครื่องออกแบบเค้กในฝัน<span>แบบ 3 มิติ</span></h2>
+                <p class="section-subtitle">ตกแต่งและปรับเปลี่ยนส่วนผสมเค้กของคุณเอง พร้อมคำนวณราคาสั่งทำพิเศษเรียลไทม์
+                </p>
+            </div>
+
+            <div class="customizer-grid reveal">
+                <!-- Visual Cake Container -->
+                <div class="cake-visualizer-container">
+                    <div class="cake-visualizer">
+
+                        <!-- Cake layers from top to bottom -->
+                        <div class="cake-layer cake-layer-top flavor-vanilla">
+                            <div class="cake-cream cream-butter"></div>
+
+                            <!-- Toppings layer (Candles, Strawberries, Sprinkles) -->
+                            <div class="cake-toppings">
+                                <div class="topping-strawberry"></div>
+
+                                <div class="topping-sprinkle sprinkle-1"></div>
+                                <div class="topping-sprinkle sprinkle-2"></div>
+                                <div class="topping-sprinkle sprinkle-3"></div>
+                                <div class="topping-sprinkle sprinkle-4"></div>
+
+                                <div class="candle">
+                                    <div class="candle-flame"></div>
+                                </div>
+
+                                <!-- New Toppings -->
+                                <div class="topping-cherry"></div>
+
+                                <div class="topping-macaron macaron-1"></div>
+                                <div class="topping-macaron macaron-2"></div>
+
+                                <div class="topping-gold gold-1"></div>
+                                <div class="topping-gold gold-2"></div>
+                                <div class="topping-gold gold-3"></div>
+
+                                <div class="topping-oreo oreo-1"></div>
+                                <div class="topping-oreo oreo-2"></div>
+                            </div>
+                        </div>
+                        <div class="cake-layer cake-layer-middle flavor-vanilla">
+                            <div class="cake-cream cream-butter"></div>
+                        </div>
+                        <div class="cake-layer flavor-vanilla">
+                            <div class="cake-cream cream-butter"></div>
+                        </div>
+
+                        <!-- Cake base stand -->
+                        <div class="cake-stand"></div>
+                    </div>
+                </div>
+
+                <!-- Customizer Options Controls -->
+                <div class="customizer-options">
+
+                    <!-- Step 1: Base flavor -->
+                    <div class="custom-step">
+                        <h3>ขั้นตอนที่ 1: เลือกเนื้อรสชาติเค้ก</h3>
+                        <div class="option-group">
+                            <button class="option-btn active" data-step="flavor" data-value="vanilla">วานิลลา
+                                (+฿0)</button>
+                            <button class="option-btn" data-step="flavor" data-value="chocolate">ช็อกโกแลต
+                                (+฿50)</button>
+                            <button class="option-btn" data-step="flavor" data-value="strawberry">สตรอว์เบอร์รี่
+                                (+฿50)</button>
+                            <button class="option-btn" data-step="flavor" data-value="matcha">มัทฉะชาเขียว
+                                (+฿70)</button>
+                        </div>
+                    </div>
+
+                    <!-- Step 2: Icing Cream -->
+                    <div class="custom-step">
+                        <h3>ขั้นตอนที่ 2: เลือกครีมปาดแต่งหน้า</h3>
+                        <div class="option-group">
+                            <button class="option-btn active" data-step="cream" data-value="butter">บัตเตอร์ครีม
+                                (+฿0)</button>
+                            <button class="option-btn" data-step="cream" data-value="cheese">ครีมชีส (+฿50)</button>
+                            <button class="option-btn" data-step="cream" data-value="chocolate">ช็อกโกแลต
+                                (+฿40)</button>
+                            <button class="option-btn" data-step="cream" data-value="strawberry">ครีมชมพูหวาน
+                                (+฿35)</button>
+                        </div>
+                    </div>
+
+                    <!-- Step 3: Toppings toggle -->
+                    <div class="custom-step">
+                        <h3>ขั้นตอนที่ 3: ตกแต่งท็อปปิ้งเพิ่มเติม</h3>
+                        <div class="option-group">
+                            <button class="option-btn" data-step="topping" data-value="strawberry">สตรอว์เบอร์รี่สด
+                                (+฿60)</button>
+                            <button class="option-btn" data-step="topping" data-value="sprinkle">เกล็ดนํ้าตาลสี
+                                (+฿20)</button>
+                            <button class="option-btn" data-step="topping" data-value="candle">ปักเทียนวันเกิด
+                                (+฿15)</button>
+                            <button class="option-btn" data-step="topping" data-value="cherry">เชอร์รี่สดแดง
+                                (+฿45)</button>
+                            <button class="option-btn" data-step="topping" data-value="macaron">มาการองพาสเทล
+                                (+฿75)</button>
+                            <button class="option-btn" data-step="topping" data-value="gold">ทองคำเปลวพรีเมียม
+                                (+฿80)</button>
+                            <button class="option-btn" data-step="topping" data-value="oreo">คุ้กกี้โอรีโอบด
+                                (+฿40)</button>
+                        </div>
+                    </div>
+
+                    <!-- Price Summary and CTA -->
+                    <div class="custom-summary">
+                        <div class="custom-price-info">
+                            <span>ราคารวมโดยประมาณ:</span>
+                            <div class="custom-total-price" id="customTotalPrice">฿450</div>
+                        </div>
+                        <button class="btn btn-accent" id="orderCustomCake">สั่งทำตามแบบนี้</button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- --- CONTACT SECTION --- -->
+    <section id="contact" class="section">
+        <div class="container">
+            <div class="contact-grid">
+                <!-- Info Column -->
+                <div class="contact-info reveal">
+                    <div>
+                        <span class="section-tag">สอบถามเส้นทางหรือสั่งล่วงหน้า</span>
+                        <h2 class="section-title">อบความอบอุ่น<br>พร้อมเสิร์ฟ<span>ถึงคุณ</span></h2>
+                        <p class="story-text" style="max-width: 450px; margin-bottom: 40px;">
+                            คุณสามารถสั่งจองขนมปังและครัวซองต์ล่วงหน้าเพื่อเข้ามารับที่ร้าน
+                            หรือคุยกับเชฟสำหรับการออกแบบสั่งทำเค้กโอกาสพิเศษได้เลยค่ะ</p>
+                    </div>
+
+                    <div class="contact-details">
+                        <!-- Address -->
+                        <div class="contact-detail-item">
+                            <div class="contact-icon-box">
+                                <svg viewBox="0 0 24 24">
+                                    <path
+                                        d="M12,11.5A2.5,2.5 0 0,1 9.5,9A2.5,2.5 0 0,1 12,6.5A2.5,2.5 0 0,1 14.5,9A2.5,2.5 0 0,1 12,11.5M12,2A7,7 0 0,0 5,9C5,14.25 12,22 12,22C12,22 19,14.25 19,9A7,7 0 0,0 12,2Z" />
+                                </svg>
+                            </div>
+                            <div class="contact-detail-text">
+                                <h3>ที่ตั้งร้าน</h3>
+                                <p>ต.เมืองใต้ อ.เมืองศรีสะเกษ จ.ศรีสะเกษ 33000</p>
+                            </div>
+                        </div>
+
+                        <!-- Tel & Email -->
+                        <div class="contact-detail-item">
+                            <div class="contact-icon-box">
+                                <svg viewBox="0 0 24 24">
+                                    <path
+                                        d="M6.62,10.79C8.06,13.62 10.38,15.94 13.21,17.38L15.41,15.18C15.69,14.9 16.08,14.82 16.43,14.93C17.55,15.3 18.75,15.5 20,15.5A1,1 0 0,1 21,16.5V20A1,1 0 0,1 20,21A17,17 0 0,1 3,4A1,1 0 0,1 4,3H7.5A1,1 0 0,1 8.5,4C8.5,5.25 8.7,6.45 9.07,7.57C9.18,7.92 9.1,8.31 8.82,8.59L6.62,10.79Z" />
+                                </svg>
+                            </div>
+                            <div class="contact-detail-text">
+                                <h3>ช่องทางการติดต่อ</h3>
+                                <p>เบอร์โทร: 098-999-9999<br>อีเมล: hello@fahbakery.com</p>
+                            </div>
+                        </div>
+
+                        <!-- Opening Hours -->
+                        <div class="contact-detail-item">
+                            <div class="contact-icon-box">
+                                <svg viewBox="0 0 24 24">
+                                    <path
+                                        d="M12,20A8,8 0 0,0 20,12A8,8 0 0,0 12,4A8,8 0 0,0 4,12A8,8 0 0,0 12,20M12,2A10,10 0 0,1 22,12A10,10 0 0,1 12,22A10,10 0 0,1 2,12A10,10 0 0,1 12,2M12.5,7V12.25L17,14.92L16.25,16.15L11,13V7H12.5Z" />
+                                </svg>
+                            </div>
+                            <div class="contact-detail-text">
+                                <h3>เวลาทำการ</h3>
+                                <p>วันอังคาร - วันอาทิตย์: 07:00 น. - 19:00 น.<br><span
+                                        style="color: var(--highlight); font-weight: 600;">(หยุดทุกวันจันทร์)</span></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Socials -->
+                    <div class="social-links">
+                        <a href="#" class="social-btn" aria-label="Facebook Page Link">
+                            <svg viewBox="0 0 24 24">
+                                <path
+                                    d="M17,2H14A5,5 0 0,0 9,7V10H6V14H9V22H13V14H16L17,10H13V7A1,1 0 0,1 14,6H17V2Z" />
+                            </svg>
+                        </a>
+                        <a href="#" class="social-btn" aria-label="Instagram Page Link">
+                            <svg viewBox="0 0 24 24">
+                                <path
+                                    d="M7.8,2H16.2C19.4,2 22,4.6 22,7.8V16.2A5.8,5.8 0 0,1 16.2,22H7.8C4.6,22 2,19.4 2,16.2V7.8A5.8,5.8 0 0,1 7.8,2M12,7A5,5 0 0,0 7,12A5,5 0 0,0 12,17A5,5 0 0,0 17,12A5,5 0 0,0 12,7M12,9A3,3 0 0,1 15,12A3,3 0 0,1 12,15A3,3 0 0,1 9,12A3,3 0 0,1 12,9M18,5.5A1.25,1.25 0 1,0 18,8A1.25,1.25 0 0,0 18,5.5Z" />
+                            </svg>
+                        </a>
+                        <a href="#" class="social-btn" aria-label="Line Account Link">
+                            <svg viewBox="0 0 24 24">
+                                <path
+                                    d="M12,2C6.48,2 2,5.77 2,10.42C2,12.72 3.12,14.77 4.96,16.2C4.38,18.3 3.32,20.5 3.3,20.55A0.5,0.5 0 0,0 3.8,21.2C6.88,20.78 9.38,19 10.35,18.42C10.9,18.52 11.45,18.57 12,18.57C17.52,18.57 22,14.8 22,10.15C22,5.5 17.52,2 12,2M12,16.57C7.58,16.57 4,13.8 4,10.42C4,7.05 7.58,4.28 12,4.28C16.42,4.28 20,7.05 20,10.42C20,13.8 16.42,16.57 12,16.57Z" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Form Column -->
+                <div class="reveal" style="transition-delay: 0.2s;">
+                    <div class="contact-form-wrapper">
+                        <div id="formMessage" class="form-message"></div>
+
+                        <form id="contactForm">
+                            <div class="form-group">
+                                <label for="contactName" class="form-label">ชื่อ-นามสกุล <span
+                                        style="color: var(--highlight);">*</span></label>
+                                <input type="text" id="contactName" class="form-input" placeholder="กรุณากรอกชื่อของคุณ"
+                                    required>
+                            </div>
+
+                            <div class="form-group-row">
+                                <div class="form-group">
+                                    <label for="contactEmail" class="form-label">อีเมล <span
+                                            style="color: var(--highlight);">*</span></label>
+                                    <input type="email" id="contactEmail" class="form-input"
+                                        placeholder="example@email.com" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="contactTel" class="form-label">เบอร์โทรศัพท์ (ถ้ามี)</label>
+                                    <input type="tel" id="contactTel" class="form-input" placeholder="08x-xxx-xxxx">
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="contactMsg" class="form-label">ข้อความที่คุณต้องการติดต่อ <span
+                                        style="color: var(--highlight);">*</span></label>
+                                <textarea id="contactMsg" class="form-textarea"
+                                    placeholder="พิมพ์ข้อความของคุณที่นี่ (เช่น สนใจติดต่อสั่งทำเค้กวันเกิด หรือสำรองเบเกอรี่)"
+                                    required></textarea>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary form-submit-btn">ส่งข้อความ</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- --- FOOTER --- -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <!-- Col 1 -->
+                <div class="footer-brand">
+                    <h3>Fah <span>Bakery & Café</span></h3>
+                    <p>ส่งต่อกลิ่นอายความสุขและความอร่อยดั้งเดิมผ่านทางขนมอบพรีเมียมในทุกมื้อของวัน</p>
+                </div>
+
+                <!-- Col 2 -->
+                <div class="footer-col">
+                    <h4>เมนูของเรา</h4>
+                    <ul class="footer-links">
+                        <li><a href="#menu">ครัวซองต์เนยแท้</a></li>
+                        <li><a href="#menu">แปงโอช็อกโกแลต</a></li>
+                        <li><a href="#menu">สตรอว์เบอร์รี่ชอร์ตเค้ก</a></li>
+                        <li><a href="#menu">ขนมปังสุขภาพซาวโดวจ์</a></li>
+                    </ul>
+                </div>
+
+                <!-- Col 3 -->
+                <div class="footer-col">
+                    <h4>ลิงก์ด่วน</h4>
+                    <ul class="footer-links">
+                        <li><a href="#home">หน้าแรก</a></li>
+                        <li><a href="#story">เรื่องราวของเรา</a></li>
+                        <li><a href="#customizer">เครื่องออกแบบเค้ก</a></li>
+                        <li><a href="#contact">ติดต่อสั่งซื้อ</a></li>
+                    </ul>
+                </div>
+
+                <!-- Col 4 -->
+                <div class="footer-col">
+                    <div class="footer-newsletter">
+                        <h4>รับข้อมูลข่าวสาร</h4>
+                        <p>ลงทะเบียนรับสิทธิพิเศษ ข้อมูลเบเกอรี่เมนูพิเศษประจำสัปดาห์ และสูตรอบขนมฟรี</p>
+                        <form class="newsletter-form"
+                            onsubmit="event.preventDefault(); alert('ขอบคุณสำหรับการติดตามจดหมายข่าวของเรา!'); this.reset();">
+                            <input type="email" class="newsletter-input" placeholder="ใส่อีเมลของคุณ" required
+                                aria-label="กรอกอีเมลรับข่าวสาร">
+                            <button type="submit" class="newsletter-btn">ติดตาม</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 Fah Bakery & Café. สงวนลิขสิทธิ์ทั้งหมด.</p>
+                <p>ออกแบบโดยทีมงานเบเกอรี่ระดับสากล</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- --- SHOPPING CART DRAWER --- -->
+    <div class="cart-drawer-overlay" id="cartOverlay"></div>
+    <div class="cart-drawer" id="cartDrawer">
+        <div class="cart-header">
+            <h2>ตะกร้าสินค้าของคุณ</h2>
+            <button class="cart-close" id="cartClose" aria-label="Close Cart">&times;</button>
+        </div>
+
+        <div class="cart-items" id="cartItemsContainer">
+            <div class="cart-empty-state">
+                <svg viewBox="0 0 24 24">
+                    <path d="M19,13H13V19H11V13H5V11H11V5H13V11H19V13Z" />
+                </svg>
+                <p>ยังไม่มีสินค้าในตะกร้า</p>
+            </div>
+        </div>
+
+        <div class="cart-footer">
+            <div class="cart-subtotal">
+                <span>ราคารวมทั้งหมด:</span>
+                <span id="cartSubtotal">฿0</span>
+            </div>
+            <button class="btn btn-accent cart-checkout-btn" id="cartCheckoutBtn">สั่งซื้อสินค้า</button>
+        </div>
+    </div>
+
+    <!-- --- CHECKOUT MODAL --- -->
+    <div class="checkout-modal-overlay" id="checkoutOverlay"></div>
+    <div class="checkout-modal" id="checkoutModal">
+        <button class="checkout-close" id="checkoutClose">&times;</button>
+        <h2>กรอกรายละเอียดการสั่งซื้อ</h2>
+
+        <form id="checkoutForm">
+            <div class="checkout-summary-box">
+                <h3>สรุปรายการสั่งซื้อ</h3>
+                <ul id="checkoutSummaryList">
+                    <!-- Summaries -->
+                </ul>
+                <div class="checkout-summary-total">
+                    <span>ยอดชำระเงินทั้งหมด:</span>
+                    <span id="checkoutSummaryTotal">฿0</span>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="checkoutName" class="form-label">ชื่อผู้รับสินค้า <span
+                        style="color: var(--highlight);">*</span></label>
+                <input type="text" id="checkoutName" class="form-input" placeholder="ระบุชื่อของคุณ" required>
+            </div>
+
+            <div class="form-group">
+                <label for="checkoutTel" class="form-label">เบอร์โทรศัพท์ <span
+                        style="color: var(--highlight);">*</span></label>
+                <input type="tel" id="checkoutTel" class="form-input" placeholder="08x-xxx-xxxx" required>
+            </div>
+
+            <div class="form-group-row">
+                <div class="form-group">
+                    <label for="checkoutDate" class="form-label">วันที่รับสินค้า <span
+                            style="color: var(--highlight);">*</span></label>
+                    <input type="date" id="checkoutDate" class="form-input" required>
+                </div>
+                <div class="form-group">
+                    <label for="checkoutTime" class="form-label">เวลารับสินค้า <span
+                            style="color: var(--highlight);">*</span></label>
+                    <input type="time" id="checkoutTime" class="form-input" required>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="checkoutPayment" class="form-label">วิธีชำระเงิน <span
+                        style="color: var(--highlight);">*</span></label>
+                <select id="checkoutPayment" class="form-input" required style="width:100%; height:auto;">
+                    <option value="transfer">โอนเงินเข้าบัญชีธนาคาร (ทางร้านจะส่งคิวอาร์โค้ดผ่าน SMS)</option>
+                    <option value="cash">ชำระเงินสดที่หน้าร้านเมื่อรับสินค้า</option>
+                </select>
+            </div>
+
+            <button type="submit" class="btn btn-primary form-submit-btn"
+                style="margin-top: 10px;">ยืนยันคำสั่งซื้อ</button>
+        </form>
+
+        <!-- Success state screen inside modal -->
+        <div class="checkout-success-state" id="checkoutSuccessState">
+            <div class="success-checkmark">
+                <div class="check-icon">
+                    <span class="icon-line line-tip"></span>
+                    <span class="icon-line line-long"></span>
+                    <div class="icon-circle"></div>
+                    <div class="icon-fix"></div>
+                </div>
+            </div>
+            <h3>สั่งซื้อสินค้าเสร็จสิ้น!</h3>
+            <p>รหัสคำสั่งซื้อของคุณคือ <span id="checkoutOrderNumber"
+                    style="font-weight:700; color:var(--accent-dark);">#FH-0000</span></p>
+            <p style="font-size:0.9rem; color:var(--text-secondary); margin-top:8px;">
+                ทางร้านได้รับการสั่งซื้อของท่านแล้ว เจ้าหน้าที่จะจัดส่งข้อมูลสรุปและช่องทางชำระเงินทาง SMS ภายใน 5 นาที
+                ขอบคุณค่ะ</p>
+            <button type="button" class="btn btn-primary" id="checkoutSuccessCloseBtn"
+                style="margin-top:24px; width:100%;">กลับสู่หน้าหลัก</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
